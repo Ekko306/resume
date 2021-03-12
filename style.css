@@ -281,9 +281,6 @@ img {
     color: black;
 }
 
-.source:link {
-    text-decoration: none;
-}
 
 .source:hover {
     background-color: #cc6b5a;

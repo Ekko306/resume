@@ -37,18 +37,31 @@
         <a target="_blank" class="source no-margin-top" href="https://github.com/MuxiKeStack/muxi_KeStack_fe">
             github地址：https://github.com/Ekko306/muxi_workbench_fe_v2
         </a>
-
+        <h1 class="title">二、项目技术</h1>
+        <div class="detail"  style="display: flex">
+            <ul>
+                <li>React、Redux</li>
+                <li>函数式组件、hooks</li>
+                <li>TypeScri</li>
+                <li>eslint+prettier</li>
+                <li>Less、流式布局</li>
+                <li>Pont</li>
+                <li>Antd组件规范、classnames</li>
+                <li>husky、lint-staged团队约束</li>
+                <li>tinymce</li>
+            </ul>
+        </div>
 
         <button class="button">项目经历详情</button>
         <div class="drawer">
-        <h1 class="title">二、项目背景</h1>
+        <h1 class="title">三、项目背景</h1>
         <div class="detail">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;完成木犀课栈之后，接受到重构木犀工作台的任务，木犀工作台是木犀团队内部使用的用来保存团队文档，分享进度，管理档期的内部使用平台，在一年前已经由学长学姐完成过v1版本，当时技术与项目规范有限，这次学长要求我用更新的技术，更规范的项目结构完成重构工作，要达到他的严格标准。
             <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;由于木犀课栈的经验，写前端代码已经有了更清晰的认识与架构思想，同时不满足写课栈时前端知识的匮乏，在重构项目前系统学习了JavaScript（Eloquent JavaScript），与CSS（Css In Depth），要求自己用规范正确的代码完成这次重构任务。
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;由于木犀课栈的经验，写前端代码已经有了更清晰的认识与架构思想，同时不满足写课栈时前端知识的匮乏，在重构项目前系统学习了JavaScript（<a class="source" href="http://eloquentjavascript.net/" target="_blank">Eloquent JavaScrip</a>），与CSS（<a href="https://www.amazon.com/CSS-Depth-Keith-J-Grant/dp/1617293458" target="_blank" class="source">Css In Depth</a>），要求自己用规范正确的代码完成这次重构任务。
         </div>
 
-        <h1 class="title">三、项目任务</h1>
+        <h1 class="title">四、项目任务</h1>
         <div class="detail">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;为了更好重构工作台，有许多新的规范与知识学习，面对新知识都按照以下流程学习并应用到项目：
             <br/>
@@ -123,7 +136,7 @@
             </table>
         </div>
 
-        <h1 class="title">三、项目行动</h1>
+        <h1 class="title">五、项目行动</h1>
         <div class="detail">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;期间有比较多困难，实在太困难会寻求学长的帮助，尽量独立学习总结。印象最深的是TypeScript的使用，因为第一次接触，不懂不熟定义类型匹配类型，遇到很多爆红报错却不知如何解决（不知道搜什么问题），首先在网上搜寻英文文档无果，最后没办法寻求学长的帮助，才知道可以command查看两者类型检查是否匹配，也可以command点击变量查看定义ts，分析定义结构。从此遇见多了ts错误不再畏难害怕，而是冷静分析错误原因，修改匹配类型，获得提升。
             <br/>
@@ -131,12 +144,12 @@
 
         </div>
 
-        <h1 class="title">四、项目结果</h1>
+        <h1 class="title">六、项目结果</h1>
         <div class="detail">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;经过近五个月的摸索学习，现在已经完成工作台项目的四分之一"进度"功能模块，并且完成项目页面的模版样式，剩余三个模块可以参考"进度"模块进行规范开发，完成重构是时间问题（还有新的规范与挑战解决），期待写出完美完善的重构工作台应用给团队成员使用。
         </div>
 
-        <h1 class="title">五、项目收获</h1>
+        <h1 class="title">七、项目收获</h1>
         <ul class="detail end">
             <li>更加规范的大型项目开发经验</li>
             <li>更规范的JavaScript、CSS学习并应用</li>
@@ -161,16 +174,13 @@
         var dropdown = document.getElementsByClassName('drawer')[0];
         var height = dropdown.scrollHeight
         var footer = document.getElementsByClassName('page-footer')[0]
-        footer.classList.add('down')
         toggle.addEventListener('click', function (e) {
             e.preventDefault();
             dropdown.classList.toggle('is-open');
             if(dropdown.classList.contains('is-open')) {
                 dropdown.style.setProperty('height', height + 'px')
-                footer.classList.remove('down')
             } else {
                 dropdown.style.setProperty('height', '0')
-                footer.classList.add('down')
             }
         });
     }());
