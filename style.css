@@ -1,0 +1,355 @@
+@import "fonts.css";
+html {
+    --brand-green: hsl(162,87%,21%);
+    --dark-green: hsl(162,88%,30%);
+    --medium-green: hsl(162,73%,46%);
+    --text-color: hsl(210,11%,15%);
+    --gray: hsl(210,7%,56%);
+    --light-gray: hsl(210,17%,95%);
+    --extra-light-gray: hsl(210,17%,98%);
+    --white: hsl(0,0%,100%);
+    --red: hsl(342, 63%, 46%);
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: hsl(200, 80%, 30%);
+    background-image: radial-gradient(hsl(200, 80%, 30%), hsl(210, 80%, 30%));
+    color: white;
+    font-family: RaleWay, Helvetica, Arial, sans-serif;
+    /*font-family:  , sans-serif;*/
+    line-height: 1.4;
+    margin: 0;
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    font-family: 'ZCOOL XiaoWei', serif;
+    font-weight: 400;
+}
+
+main {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+}
+
+.page-header {
+    margin: 0;
+    padding: 1rem;
+}
+
+/* >480px的时候用下面的 但是 浏览器屏幕太大了 始终 大于480px 就看不出变化 chrome 最小500px xiaoku*/
+.page-header {
+    padding: 2rem 2rem 3rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+    list-style: none;
+}
+
+.nav-links > li + li {
+    margin-left: 0.8em;
+}
+
+.nav-links > li > a {
+    display: block;
+    padding: 0.8em 0;
+    color: white;
+    font-size: 0.8rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.nav-links__icon {
+    height: 1.5em;
+    width: 1.5em;
+    vertical-align: -0.2em;
+    object-fit: contain;
+}
+
+.nav-links > li > a:hover {
+    color: hsl(40, 100%, 70%);
+}
+
+.main-nav {
+    position: fixed;
+    top: 8.25rem;
+    left: 0;
+    z-index: 10;
+    background-color: transparent;
+    transition: background-color .5s linear;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+
+.main-nav:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.nav-links {
+    display: block;
+    padding: 1em;
+    margin-bottom: 0;
+}
+
+.nav-links > li + li {
+    margin-left: 0;
+}
+
+.nav-links__label {
+    display: inline-block;
+    margin-left: 1em;
+    padding-right: 1em;
+    opacity: 0;
+    transform: translate(-1em);
+    transition: transform 0.4s cubic-bezier(0.2, 0.9, 0.3, 1.3), opacity 0.4s linear;
+}
+
+.nav-links:hover .nav-links__label,
+.nav-links a:focus > .nav-links__label {
+    opacity: 1;
+    transform: translate(0);
+}
+
+.nav-links > li:nth-child(2) .nav-links__label {
+    transition-delay: 0.1s;
+}
+
+.nav-links > li:nth-child(3) .nav-links__label {
+    transition-delay: 0.2s;
+}
+
+.nav-links > li:nth-child(4) .nav-links__label {
+    transition-delay: 0.3s;
+}
+
+.nav-links > li:nth-child(5) .nav-links__label {
+    transition-delay: 0.4s;
+}
+
+
+.nav-links__icon {
+    transition: transform 0.2s ease-out;
+}
+
+.nav-links a:hover > .nav-links__icon,
+.nav-links a:focus > .nav-links__icon {
+    transform: scale(1.3);
+}
+
+
+.white {
+    background-color: white;
+}
+
+.big {
+    width: 1.6em;
+    height: 1.6em;
+}
+
+.card {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    background-color: white;
+    color: hsl(210, 15%, 20%);
+    box-shadow: 0.2em 0.5em 1em rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center; /*flex-direction之后 main axis改变 所以编程aligin-items指定cross axis的方向*/
+    flex-direction: column;
+    line-height: 1.6;
+}
+
+.card > img {
+    width: 100%;
+}
+
+.card > * + * {
+    margin-top: 20px;
+}
+
+.flyin-grid {
+    margin: 0 5rem;
+}
+
+
+.page-footer {
+    margin-top: 3em;
+    padding: 1em 0;
+    background-color: var(--light-gray);
+    color: var(--gray);
+}
+
+.down {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.page-footer__inner {
+    margin: 0 auto;
+    max-width: 1080px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.button {
+    padding: 0.8em;
+    border: 0;
+    font-size: 1rem;
+    color: white;
+    border-radius: 0.5em;
+    background-color: #57b;
+    box-shadow: 0 0.4em #148;
+    text-shadow: 1px 1px #148;
+}
+.button:focus {
+    outline: none;
+}
+.button:active {
+    background-color: #456ab5;
+    transform: translateY(0.1em);
+    box-shadow: 0 0.3em #148;
+}
+
+
+.drawer {
+    height: 0;
+    overflow: hidden;
+    transition: height 3s ease-out;
+}
+
+.drawer.is-open {
+    height: auto;
+}
+
+.no-margin-top {
+    margin-top: 0;
+}
+
+
+/*木犀课栈*/
+
+.title {
+    align-self: flex-start;
+    background-color: transparent;
+}
+
+.qr {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 30px;
+    padding: 22px 22px 0 22px;
+    transition: transform 0.4s ease-out;
+    margin-top: 0;
+    background-color: var(--light-gray);
+}
+.qr-img {
+    width: 300px;
+    height: 300px;
+}
+
+.qr:hover {
+    transform: scale(1.1);
+}
+
+
+.account {
+    width: 300px;
+    border-radius: 30px;
+    text-align: center;
+    padding: 5px;
+    background-color: var(--light-gray)
+}
+
+.source {
+    color: black;
+}
+
+.source:link {
+    text-decoration: none;
+}
+
+.source:hover {
+    background-color: #cc6b5a;
+    color: white;
+}
+
+.source:active {
+    color: hsl(189, 53%, 58%);
+}
+
+.detail {
+    width: 85%;
+    margin: 0 auto;
+    align-self: flex-start;
+}
+
+.end {
+    margin-bottom: 30px;
+}
+
+/*木犀课栈*/
+
+/*木犀工作台*/
+.styled-table {
+    border-collapse: collapse;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin: 10px auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    border-right: 1px solid #dddddd;
+
+}
+
+.styled-table th {
+    width: 256px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody th,td:last-of-type {
+    border-right: none;
+}
+.styled-table thead th:first-of-type {
+    width: 100px;
+}
+/*木犀工作台*/
