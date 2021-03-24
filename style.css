@@ -221,6 +221,7 @@ img {
     background-color: #57b;
     box-shadow: 0 0.4em #148;
     text-shadow: 1px 1px #148;
+    cursor: pointer;
 }
 .button:focus {
     outline: none;
