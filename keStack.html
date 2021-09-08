@@ -7,7 +7,7 @@
 </head>
 <body>
 <header>
-    <h1 class="page-header">项目经历：木犀课栈</h1>
+    <h1 class="page-header">木犀团队：项目经历</h1>
 </header>
 <nav class="main-nav">
     <ul class="nav-links">
@@ -20,13 +20,13 @@
         <li>
             <a href="./keStack.html">
                 <img src="images/keStack.jpg" class="nav-links__icon big"/>
-                <span class="nav-links__label">keStack</span>
+                <span class="nav-links__label">Muxi</span>
             </a>
         </li>
         <li>
             <a href="./workbench.html">
                 <img src="images/workbench.png" class="nav-links__icon white"/>
-                <span class="nav-links__label">workBench</span>
+                <span class="nav-links__label">Practice</span>
             </a>
         </li>
         <li>
@@ -40,7 +40,7 @@
 
 <main class="flyin-grid">
     <div class="card">
-        <h1 class="title">一、项目地址</h1>
+        <h1 class="title">一、木犀课栈（已上线qq小程序）</h1>
         <div class="qr">
             <img src="images/keLink.png" alt="QR" class="qr-img">
             <div>小程序二维码（手机qq扫描）</div>
@@ -100,6 +100,142 @@
         </div>
     </div>
 </main>
+<main class="flyin-grid">
+    <div class="card">
+        <h1 class="title">一、木犀工作台（重构中）</h1>
+        <a target="_blank" class="source no-margin-top" href="https://github.com/Ekko306/muxi_workbench_fe_v2">
+            github地址：https://github.com/Ekko306/muxi_workbench_fe_v2
+        </a>
+        <a target="_blank" class="source no-margin-top" href="http://work.muxixyz.com/" style="margin-top: 30px">
+            v1在线体验地址：http://work.muxixyz.com/
+        </a>
+        <a target="_blank" class="source no-margin-top" href="http://310g76m925.goho.co/" style="margin-top: 30px">
+            v2在线体验地址：http://310g76m925.goho.co/
+        </a>
+        <h1 class="title">二、项目技术</h1>
+        <div class="detail"  style="display: flex">
+            <ul>
+                <li>React、Redux</li>
+                <li>函数式组件、hooks</li>
+                <li>TypeScri</li>
+                <li>eslint+prettier</li>
+                <li>Less、流式布局</li>
+                <li>Pont</li>
+                <li>Antd组件规范、classnames</li>
+                <li>husky、lint-staged团队约束</li>
+                <li>tinymce</li>
+            </ul>
+        </div>
+
+        <button class="button1">项目经历详情</button>
+        <div class="drawer1">
+            <h1 class="title">三、项目背景</h1>
+            <div class="detail">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;完成木犀课栈之后，接受到重构木犀工作台的任务，木犀工作台是木犀团队内部使用的用来保存团队文档，分享进度，管理档期的内部使用平台，在一年前已经由学长学姐完成过v1版本，当时技术与项目规范有限，这次学长要求我用更新的技术，更规范的项目结构完成重构工作，要达到他的严格标准。
+                <br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;由于木犀课栈的经验，写前端代码已经有了更清晰的认识与架构思想，同时不满足写课栈时前端知识的匮乏，在重构项目前系统学习了JavaScript（<a class="source" href="http://eloquentjavascript.net/" target="_blank">Eloquent JavaScrip</a>），与CSS（<a href="https://www.amazon.com/CSS-Depth-Keith-J-Grant/dp/1617293458" target="_blank" class="source">Css In Depth</a>），要求自己用规范正确的代码完成这次重构任务。
+            </div>
+
+            <h1 class="title">四、项目任务</h1>
+            <div class="detail">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;为了更好重构工作台，有许多新的规范与知识学习，面对新知识都按照以下流程学习并应用到项目：
+                <br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>独立查找资料=》学习=》尝试写代码=》交由学长code review=》修改</b>
+                <br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;工作台v1与v2的重构任务与区别如下表：
+                <table class="styled-table">
+                    <thead>
+                    <tr>
+                        <th>重构项</th>
+                        <th>v1</th>
+                        <th>v2</th>
+                        <th>优点</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>项目架构</td>
+                        <td>CRA默认封装开发逻辑</td>
+                        <td>yarn eject，修改webpack等配置</td>
+                        <td>效率更高，适配本项目</td>
+                    </tr>
+                    <tr>
+                        <td>类型检查</td>
+                        <td>prop-types包</td>
+                        <td>TypeScript</td>
+                        <td>更规范，功能更强</td>
+                    </tr>
+                    <tr>
+                        <td>css预处理器</td>
+                        <td>SASS</td>
+                        <td>LESS</td>
+                        <td>配置编译逻辑，速度更快</td>
+                    </tr>
+                    <tr>
+                        <td>页面布局</td>
+                        <td>固定静态布局</td>
+                        <td>流式布局</td>
+                        <td>适配不同浏览器大小</td>
+                    </tr>
+                    <tr>
+                        <td>组件形式</td>
+                        <td>类组件</td>
+                        <td>函数组件</td>
+                        <td>纯函数组件更好</td>
+                    </tr>
+                    <tr>
+                        <td>页面逻辑</td>
+                        <td>生命周期与state</td>
+                        <td>Hooks</td>
+                        <td>效果更好</td>
+                    </tr>
+                    <tr>
+                        <td>请求数据</td>
+                        <td>手写封装fetch</td>
+                        <td>pont自动生成</td>
+                        <td>类型检查，沉浸开发</td>
+                    </tr>
+                    <tr>
+                        <td>组件规范</td>
+                        <td>复杂庞大</td>
+                        <td>参考antd规范设计</td>
+                        <td>结构清晰，性能更强</td>
+                    </tr>
+                    <tr>
+                        <td>状态管理</td>
+                        <td>缺少</td>
+                        <td>redux</td>
+                        <td>定义规范的redux，共享提升状态</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h1 class="title">五、项目行动</h1>
+            <div class="detail">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;期间有比较多困难，实在太困难会寻求学长的帮助，尽量独立学习总结。印象最深的是TypeScript的使用，因为第一次接触，不懂不熟定义类型匹配类型，遇到很多爆红报错却不知如何解决（不知道搜什么问题），首先在网上搜寻英文文档无果，最后没办法寻求学长的帮助，才知道可以command查看两者类型检查是否匹配，也可以command点击变量查看定义ts，分析定义结构。从此遇见多了ts错误不再畏难害怕，而是冷静分析错误原因，修改匹配类型，获得提升。
+                <br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;还有许多问题都是遇见错误，并学习理解，体会一个项目从0到1的构建过程，同时锻炼了独立开发能力，对前端有了更深层次的理解。
+
+            </div>
+
+            <h1 class="title">六、项目结果</h1>
+            <div class="detail">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;经过近五个月的摸索学习，现在已经完成工作台项目的四分之一"进度"功能模块，并且完成项目页面的模版样式，剩余三个模块可以参考"进度"模块进行规范开发，完成重构是时间问题（还有新的规范与挑战解决），期待写出完美完善的重构工作台应用给团队成员使用。
+            </div>
+
+            <h1 class="title">七、项目收获</h1>
+            <ul class="detail end">
+                <li>更加规范的大型项目开发经验</li>
+                <li>更规范的JavaScript、CSS学习并应用</li>
+                <li>React底层原理学习</li>
+                <li>独立开发，构建项目能力</li>
+            </ul>
+
+        </div>
+    </div>
+</main>
+
 <footer class="page-footer">
     <div class="page-footer__inner">
         <a class="source" href="https://github.com/ekko306" target="_blank">
@@ -118,6 +254,20 @@
             e.preventDefault();
             dropdown.classList.toggle('is-open');
             if(dropdown.classList.contains('is-open')) {
+                dropdown.style.setProperty('height', height + 'px')
+            } else {
+                dropdown.style.setProperty('height', '0')
+            }
+        });
+    }());
+    (function () {
+        var toggle = document.getElementsByClassName('button1')[0];
+        var dropdown = document.getElementsByClassName('drawer1')[0];
+        var height = dropdown.scrollHeight
+        toggle.addEventListener('click', function (e) {
+            e.preventDefault();
+            dropdown.classList.toggle('is-open1');
+            if(dropdown.classList.contains('is-open1')) {
                 dropdown.style.setProperty('height', height + 'px')
             } else {
                 dropdown.style.setProperty('height', '0')

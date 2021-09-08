@@ -232,6 +232,26 @@ img {
     box-shadow: 0 0.3em #148;
 }
 
+.button1 {
+    padding: 0.8em;
+    border: 0;
+    font-size: 1rem;
+    color: white;
+    border-radius: 0.5em;
+    background-color: #57b;
+    box-shadow: 0 0.4em #148;
+    text-shadow: 1px 1px #148;
+    cursor: pointer;
+}
+.button1:focus {
+    outline: none;
+}
+.button1:active {
+    background-color: #456ab5;
+    transform: translateY(0.1em);
+    box-shadow: 0 0.3em #148;
+}
+
 
 .drawer {
     height: 0;
@@ -240,6 +260,16 @@ img {
 }
 
 .drawer.is-open {
+    height: auto;
+}
+
+.drawer1 {
+    height: 0;
+    overflow: hidden;
+    transition: height 3s ease-out;
+}
+
+.drawer1.is-open1 {
     height: auto;
 }
 
